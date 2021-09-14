@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="br" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Minecraft Quiz</title>
+    <meta name="description" content="Site sobre quiz de Minecraft">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="../css/game.css">
+    <script type="text/javascript" src="../js/game.js"></script>
+</head>
+<body>
+    <main class="mainCard">
+        <article class="cardContainer">
+            <header>
+                <h1 class="minecraftFont quizTitle">Quiz</h1>
+            </header>
+            <main class="mainContainer">
+                <h3 id="question" class="question">Pergunta: <span></span></h3>
+                <article class="choices">
+                    <span id="optionContainer1" class="subOptions"><span id="checkbox1" class="inputControl"></span><input type="radio" value="1" onclick="radioChecked(this);" class="inputClick" name="choices" id="radio1"><label class="optionLabel" id="radioText1">Template</label></span>
+                    <span id="optionContainer2" class="subOptions"><span id="checkbox2" class="inputControl"></span><input type="radio" value="2" onclick="radioChecked(this);" class="inputClick" name="choices" id="radio2"><label class="optionLabel" id="radioText2">Template</label></span>
+                    <span id="optionContainer3" class="subOptions"><span id="checkbox3" class="inputControl"></span><input type="radio" value="3" onclick="radioChecked(this);" class="inputClick" name="choices" id="radio3"><label class="optionLabel" id="radioText3">Template</label></span>
+                    <span id="optionContainer4" class="subOptions"><span id="checkbox4" class="inputControl"></span><input type="radio" value="4" onclick="radioChecked(this);" class="inputClick" name="choices" id="radio4"><label class="optionLabel" id="radioText4">Template</label></span>
+                </article>
+            </main>
+            <footer class="footerContainer">
+                <button class="backButton">Voltar para o menu</button>
+                <button class="nextButton" onclick="getNewQuestion()">Proxima pergunta</button>
+            </footer>
+        </article>
+    </main>
+</body>
+</html>

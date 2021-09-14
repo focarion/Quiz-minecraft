@@ -1,0 +1,89 @@
+.mainCard{
+    box-shadow: 0.4em 0.8em 0.4em 0 rgba(0,0,0,0.3);
+    margin: 5% 30%;
+    background-image: url(../images/background.png);
+    border-radius: 5%;
+    border: 0.6em groove black;
+}
+.mainTitle{
+    font-size: 5em;
+    color: white;
+    text-align: center;
+}
+.mainTitle:hover{
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+.cardContainer{
+    padding: 1.5em 3em
+}
+.figure{
+    background-image: url(../images/block.png);
+    background-size: 10em;
+    width: 10em;
+    height: 10em;
+}
+.figure:hover{
+    background-image: url(../images/cobblestone.png);
+    background-size: 10em;
+    width: 10em;
+    height: 10em;
+}
+.playButton{
+    border-radius: 15%;
+    font-family: minecraftFont;
+    padding: 0.25em 0.5em;
+    font-size: 3em;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-image: url(../images/grassBackground.jpg);
+    background-size: 6em;
+    border: none;
+    box-shadow: 0.05em 0.1em 0.03em #999, 0.25em 0.25em 1em rgba(256, 256, 256, 0.3), -0.25em -0.25em 1em rgba(256, 256, 256, 0.3);
+    transition: all 0.5;
+}
+.playButton:hover{
+    background-image: url(../images/cobblestoneBackground.png);
+    background-size: 6em;
+}
+.playButton:active{
+    background-image: url(../images/cobblestoneBackground.png);
+    background-size: 6em;
+    box-shadow: 0.025em 0.05em 0.015em #666;
+    transform: translateY(0.05em);
+}
+.God {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    background-clip: text;
+    color: transparent;
+    animation: godLight 6s ease-in-out infinite;
+    background-size: 400% 100%;
+    font-size: 1.3em;
+}
+
+@keyframes godLight {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+.mortal {
+    color: red;
+    animation: blinker 1s step-start infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      color: blue;
+    }
+  }
+.credits{
+    color: white;
+    opacity: 0.75;
+}

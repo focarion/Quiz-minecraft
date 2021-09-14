@@ -1,0 +1,61 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+@font-face {
+	font-family: 'minecraftFont';
+	src: url('../fonts/default/minecraftfont.eot');
+	src: local('minecraftfont'), url('../fonts/default/minecraftfont.woff') format('woff'), url('../fonts/default/minecraftfont.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'minecraftTitle';
+	src: url('../fonts/title/title.ttf');
+}
+.minecraftFont {
+    font-family: 'minecraftTitle';
+}
+body{
+    font-family: 'minecraftFont';
+}
+html {
+    height: 100%;
+    width: 100%;
+    background-color: hsla(200,40%,30%,.4);
+    background-image:
+        url('../images/dirt.jpg'),
+        url('../images/Title.png'),  
+      url('../images/Mobs.png'),
+      url('../images/Ship.png'), 
+      url('../images/cloud.png');
+    background-repeat: repeat-x;
+    background-position: 
+      0 100%,
+      0 50%,
+      0 100%,
+      0 100%,
+      0 0;
+    background-size: 
+      250px,
+      800px,
+      500px,
+      1000px,
+      400px 260px;
+    animation: 50s para infinite linear;
+    }
+  
+  @keyframes para {
+    100% {
+      background-position: 
+        -2000px 100%,
+        -800px 100%,
+        500px 50%,
+        1000px 100%,
+        400px 0;
+      }
+    }
+.flexContainer{
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+}
